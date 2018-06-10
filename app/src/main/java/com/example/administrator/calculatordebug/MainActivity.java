@@ -282,10 +282,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             return false;
         }
-        else if (Input.indexOf(Operator, 1) == -1)     //如果没有输入运算符，肯定不合理
-        {
-            return false;
-        }
+//        else if (Input.indexOf(Operator, 1) == -1)     //如果没有输入运算符，肯定不合理
+//        {
+//            return false;
+//        }
         return true;
     }
 
@@ -385,6 +385,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     return sum2;
                 } else if ((Operator == "lg") || (Operator == "√￣")) {
+                    num4 = Integer.parseInt(Input.substring(indexOfOperator + 2, Input.length()));
                     switch (Operator) {
                         case "lg":
                             sum2 = (int) Math.log10(num4);
