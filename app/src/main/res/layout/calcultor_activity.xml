@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_zhishu"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:background="#3399CC"
+        android:text="^" />
+
+    <Button
+        android:id="@+id/button_point"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button_zhishu"
+        android:background="#3399CC"
+        android:text="." />
+
+    <Button
+        android:id="@+id/button_zero"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignTop="@+id/button_point"
+        android:layout_toEndOf="@+id/button_point"
+        android:background="#33CCFF"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/button_mod"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignParentBottom="true"
+        android:background="#3399CC"
+        android:layout_toEndOf="@+id/button_zero"
+        android:textAllCaps="false"
+        android:text="mod" />
+
+    <Button
+        android:id="@+id/button_add"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button_mod"
+        android:background="#3399CC"
+        android:textAllCaps="false"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/button_lg"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_zhishu"
+        android:background="#3399CC"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:text="lg" />
+
+    <Button
+        android:id="@+id/button_seven"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignTop="@+id/button_lg"
+        android:layout_toEndOf="@+id/button_lg"
+        android:background="#33CCFF"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/button_eight"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_add"
+        android:layout_toEndOf="@+id/button_seven"
+        android:background="#33CCFF"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/button_nine"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_mod"
+        android:layout_toEndOf="@+id/button_eight"
+        android:background="#33CCFF"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/button_sub"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_mod"
+        android:background="#3399CC"
+        android:layout_alignParentEnd="true"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/button_tan"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_lg"
+        android:layout_alignParentStart="true"
+        android:background="#3399CC"
+        android:textAllCaps="false"
+        android:text="tan" />
+
+    <Button
+        android:id="@+id/button_four"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_seven"
+        android:layout_toEndOf="@+id/button_tan"
+        android:background="#33CCFF"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/button_five"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignTop="@+id/button_four"
+        android:layout_toEndOf="@+id/button_four"
+        android:background="#33CCFF"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/button_six"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_sub"
+        android:layout_toEndOf="@+id/button_five"
+        android:background="#33CCFF"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/button_mul"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignTop="@+id/button_six"
+        android:background="#3399CC"
+        android:layout_toEndOf="@+id/button_six"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/button_cos"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:text="cos"
+        android:layout_above="@+id/button_tan"
+        android:background="#3399CC"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_one"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignTop="@+id/button_cos"
+        android:layout_toEndOf="@+id/button_tan"
+        android:background="#33CCFF"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/button_two"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignBottom="@+id/button_one"
+        android:layout_toEndOf="@+id/button_four"
+        android:background="#33CCFF"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/button_three"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignTop="@+id/button_two"
+        android:layout_toEndOf="@+id/button_five"
+        android:background="#33CCFF"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/button_div"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_alignTop="@+id/button_three"
+        android:layout_toEndOf="@+id/button_three"
+        android:background="#3399CC"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/button_sin"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_cos"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:background="#3399CC"
+        android:text="sin" />
+
+    <Button
+        android:id="@+id/button_kaifang"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_cos"
+        android:layout_toEndOf="@+id/button_cos"
+        android:background="#3399CC"
+        android:textAllCaps="false"
+        android:text="√￣" />
+
+    <Button
+        android:id="@+id/button_jiecheng"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_two"
+        android:layout_toEndOf="@+id/button_kaifang"
+        android:background="#3399CC"
+        android:textAllCaps="false"
+        android:text="!" />
+
+    <Button
+        android:id="@+id/button_del"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_three"
+        android:layout_toEndOf="@+id/button_two"
+        android:background="#3399CC"
+        android:text="←" />
+
+    <Button
+        android:id="@+id/button_equ"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="12.5%"
+        android:layout_above="@+id/button_three"
+        android:layout_alignParentEnd="true"
+        android:background="#3399CC"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/button_clean"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="12.5%"
+        android:textSize="30dp"
+        android:layout_above="@+id/button_sin"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:background="#3333FF"
+        android:text="Clean input" />
+
+    <EditText
+        android:id="@+id/editText"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="25%"
+        android:text=""
+        android:layout_above="@+id/button_clean"
+        android:layout_alignParentStart="true" />
+
+
+</android.support.percent.PercentRelativeLayout>
