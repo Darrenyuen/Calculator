@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button sub;
     private Button mul;
     private Button div;
-    private Button zhishu;
-    private Button jiecheng;
-    private Button kaifang;
+    private Button exp;
+    private Button fac;
+    private Button rad;
     private Button mod;
     private Button tan;
     private Button cos;
@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button point;
 
     private EditText showText;             //用来显示输入的符号和数字
-    private String Input = "";           //字符串用来保存输入的数字和符号
-    private String Operator;            //用来记录运算符号
+    private String input = "";           //字符串用来保存输入的数字和符号
+    private String operator;            //用来记录运算符号
     double sum1, num1, num2;
     int sum2, num3, num4;
 
@@ -80,9 +80,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         cos = (Button) findViewById(R.id.button_cos);
         lg = (Button) findViewById(R.id.button_lg);
         mod = (Button) findViewById(R.id.button_mod);
-        kaifang = (Button) findViewById(R.id.button_kaifang);
-        jiecheng = (Button) findViewById(R.id.button_jiecheng);
-        zhishu = (Button) findViewById(R.id.button_zhishu);
+        rad = (Button) findViewById(R.id.button_rad);
+        fac = (Button) findViewById(R.id.button_fac);
+        exp = (Button) findViewById(R.id.button_exp);
 
         del = (Button) findViewById(R.id.button_del);
         clean = (Button) findViewById(R.id.button_clean);
@@ -114,9 +114,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         sin.setOnClickListener(this);
         cos.setOnClickListener(this);
         lg.setOnClickListener(this);
-        kaifang.setOnClickListener(this);
-        jiecheng.setOnClickListener(this);
-        zhishu.setOnClickListener(this);
+        rad.setOnClickListener(this);
+        fac.setOnClickListener(this);
+        exp.setOnClickListener(this);
         mod.setOnClickListener(this);
         equ.setOnClickListener(this);
         del.setOnClickListener(this);
@@ -130,136 +130,136 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button_one:                 //记录输入的数字1
-                Input = addToInput("1");         //把数字添加进Input
-                showText.setText(Input);   //把输入的数字显示在EditText
+                input = addToInput("1");         //把数字添加进input
+                showText.setText(input);   //把输入的数字显示在EditText
                 break;
             case R.id.button_two:
-                Input = addToInput("2");
-                showText.setText(Input);
+                input = addToInput("2");
+                showText.setText(input);
                 break;
             case R.id.button_three:
-                Input = addToInput("3");
-                showText.setText(Input);
+                input = addToInput("3");
+                showText.setText(input);
                 break;
             case R.id.button_four:
-                Input = addToInput("4");
-                showText.setText(Input);
+                input = addToInput("4");
+                showText.setText(input);
                 break;
             case R.id.button_five:
-                Input = addToInput("5");
-                showText.setText(Input);
+                input = addToInput("5");
+                showText.setText(input);
                 break;
             case R.id.button_six:
-                Input = addToInput("6");
-                showText.setText(Input);
+                input = addToInput("6");
+                showText.setText(input);
                 break;
             case R.id.button_seven:
-                Input = addToInput("7");
-                showText.setText(Input);
+                input = addToInput("7");
+                showText.setText(input);
                 break;
             case R.id.button_eight:
-                Input = addToInput("8");
-                showText.setText(Input);
+                input = addToInput("8");
+                showText.setText(input);
                 break;
             case R.id.button_nine:
-                Input = addToInput("9");
-                showText.setText(Input);
+                input = addToInput("9");
+                showText.setText(input);
                 break;
             case R.id.button_zero:
-                Input = addToInput("0");
-                showText.setText(Input);
+                input = addToInput("0");
+                showText.setText(input);
                 break;
 
             //记录运算符
             case R.id.button_add:
-                Input = addToInput("+");
-                Operator = "+";
-                showText.setText(Input);
+                input = addToInput("+");
+                operator = "+";
+                showText.setText(input);
                 break;
             case R.id.button_sub:
-                Input = addToInput("-");
-                Operator = "-";
-                showText.setText(Input);
+                input = addToInput("-");
+                operator = "-";
+                showText.setText(input);
                 break;
             case R.id.button_mul:
-                Input = addToInput("*");
-                Operator = "*";
-                showText.setText(Input);
+                input = addToInput("*");
+                operator = "*";
+                showText.setText(input);
                 break;
             case R.id.button_div:
-                Input = addToInput("/");
-                Operator = "/";
-                showText.setText(Input);
+                input = addToInput("/");
+                operator = "/";
+                showText.setText(input);
                 break;
             case R.id.button_point:
-                Input = addToInput(".");
-                showText.setText(Input);
+                input = addToInput(".");
+                showText.setText(input);
                 break;
-            case R.id.button_jiecheng:
-                Input = addToInput("!");
-                Operator = "!";
-                showText.setText(Input);
+            case R.id.button_fac:
+                input = addToInput("!");
+                operator = "!";
+                showText.setText(input);
                 break;
-            case R.id.button_kaifang:
-                Input = addToInput("√￣");
-                Operator = "√￣";
-                showText.setText(Input);
+            case R.id.button_rad:
+                input = addToInput("√￣");
+                operator = "√￣";
+                showText.setText(input);
                 break;
-            case R.id.button_zhishu:
-                Input = addToInput("^");
-                Operator = "^";
-                showText.setText(Input);
+            case R.id.button_exp:
+                input = addToInput("^");
+                operator = "^";
+                showText.setText(input);
                 break;
             case R.id.button_tan:
-                Input = addToInput("tan");
-                Operator = "tan";
-                showText.setText(Input);
+                input = addToInput("tan");
+                operator = "tan";
+                showText.setText(input);
                 break;
             case R.id.button_sin:
-                Input = addToInput("sin");
-                Operator = "sin";
-                showText.setText(Input);
+                input = addToInput("sin");
+                operator = "sin";
+                showText.setText(input);
                 break;
             case R.id.button_cos:
-                Input = addToInput("cos");
-                Operator = "cos";
-                showText.setText(Input);
+                input = addToInput("cos");
+                operator = "cos";
+                showText.setText(input);
                 break;
             case R.id.button_lg:
-                Input = addToInput("lg");
-                Operator = "lg";
-                showText.setText(Input);
+                input = addToInput("lg");
+                operator = "lg";
+                showText.setText(input);
                 break;
             case R.id.button_mod:
-                Input = addToInput("mod");
-                Operator = "mod";
-                showText.setText(Input);
+                input = addToInput("mod");
+                operator = "mod";
+                showText.setText(input);
                 break;
 
             case R.id.button_del:               //删除刚刚输入的一个符号
-                if (Input.length() >= 1)      //当至少已经输入了一个符号才执行
+                if (input.length() >= 1)      //当至少已经输入了一个符号才执行
                 {
-                    Input = Input.substring(0, Input.length() - 1);
+                    input = input.substring(0, input.length() - 1);
                 }
-                showText.setText(Input);
+                showText.setText(input);
                 break;
             case R.id.button_clean:                 //清除整个显示框
-                Input = "";                  //变量全部初始化
+                input = "";                  //变量全部初始化
                 sum1 = 0;
                 sum2 = 0;
                 num4 = 0;
                 num3 = 0;
                 num2 = 0;
                 num1 = 0;
-                Operator = " ";
-                showText.setText(Input);
+                operator = " ";
+                showText.setText(input);
                 break;
             case R.id.button_equ:
-                if (CheckInput(Input))      //当输入的数字和运算符都正确，才进行计算
+                if (checkInput(input))      //当输入的数字和运算符都正确，才进行计算
                 {
-                        Input = Input + "=" + Double.valueOf(equals(Input));
-                        showText.setText(Input);//显示数字运算符和结果
-//                    Input = String.valueOf(equals(Input));        //保存运算结果，以便再直接输入一个运算符和一个数字进行下一次运算
+                    input = input + "=" + Double.valueOf(equals(input));
+                        showText.setText(input);//显示数字运算符和结果
+//                    input = String.valueOf(equals(input));        //保存运算结果，以便再直接输入一个运算符和一个数字进行下一次运算
                 } else {
                     Toast.makeText(this, "输入有误", Toast.LENGTH_SHORT).show();         //输入不合理弹出警告
                 }
@@ -268,35 +268,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
         }
-    }       //记录输入的字符，将字符录入Input,并在EditText中显示
+    }       //记录输入的字符，将字符录入input,并在EditText中显示
 
     public String addToInput(String c)                    //添加并记录一个输入的数字或符号
     {
-        Input = Input + String.valueOf(c);
-        return Input;
+        input = input + String.valueOf(c);
+        return input;
     }
 
-    public boolean CheckInput(String Input)    //这个方法用来检查用户输入的数字是否合理，比如用户输入了"9/3"这是合理的，加入输入了 " 8/*",这部合理
+    public boolean checkInput(String input)    //这个方法用来检查用户输入的数字是否合理，比如用户输入了"9/3"这是合理的，加入输入了 " 8/*",这部合理
     {
-        if (Input.length() < 2)                  //至少要分别输入了一个数字和一个运算符和一个数字，输入长度<2肯定不合理，如输入 99 按下=按钮肯定不计算
+        if (input.length() < 2)                  //至少要分别输入了一个数字和一个运算符和一个数字，输入长度<2肯定不合理，如输入 99 按下=按钮肯定不计算
         {
             return false;
         }
-//        else if (Input.indexOf(Operator, 1) == -1)     //如果没有输入运算符，肯定不合理
+//        else if (input.indexOf(operator, 1) == -1)     //如果没有输入运算符，肯定不合理
 //        {
 //            return false;
 //        }
         return true;
     }
 
-    public double equals(String Input)         //运算实现
+    public double equals(String input)         //运算实现
     {
-        int indexOfOperator = Input.indexOf(Operator);  //运算符在输入字符中的位置
-        if (Input.contains(".") || Input.contains("cos") || Input.contains("sin") || Input.contains("tan") || Input.contains("lg") || Input.contains("√￣")) {
-            if (Input.startsWith(Operator)) {
-                if ((Operator == "sin") || (Operator == "cos") || (Operator == "tan")) {
-                    num2 = Double.parseDouble(Input.substring(indexOfOperator + 3, Input.length()));
-                    switch (Operator) {
+        int indexOfOperator = input.indexOf(operator);  //运算符在输入字符中的位置
+        if (input.contains(".") || input.contains("cos") || input.contains("sin") || input.contains("tan") || input.contains("lg") || input.contains("√￣")) {
+            if (input.startsWith(operator)) {
+                if ((operator == "sin") || (operator == "cos") || (operator == "tan")) {
+                    num2 = Double.parseDouble(input.substring(indexOfOperator + 3, input.length()));
+                    switch (operator) {
                         case "sin":
                             sum1 = Math.sin(pi / 180 * num2);
                             break;
@@ -310,9 +310,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             break;
                     }
                     return sum1;
-                } else if ((Operator == "lg") || (Operator == "√￣")) {
-                    num2 = Double.parseDouble(Input.substring(indexOfOperator + 2, Input.length()));
-                    switch (Operator) {
+                } else if ((operator == "lg") || (operator == "√￣")) {
+                    num2 = Double.parseDouble(input.substring(indexOfOperator + 2, input.length()));
+                    switch (operator) {
                         case "lg":
                             sum1 = (int) Math.log10(num2);
                             break;
@@ -325,9 +325,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     return sum1;
                 }
                 return sum1;
-            } else if (Input.endsWith(Operator)) {
-                num1 = Double.parseDouble(Input.substring(0, indexOfOperator));
-                switch (Operator) {
+            } else if (input.endsWith(operator)) {
+                num1 = Double.parseDouble(input.substring(0, indexOfOperator));
+                switch (operator) {
                     case "!":
                         sum1 = 1;
                         for (int i = 1; i < num1; i++) {
@@ -339,9 +339,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 return sum1;
             } else {
-                num1 = Double.parseDouble(Input.substring(0, indexOfOperator));
-                num2 = Double.parseDouble(Input.substring(indexOfOperator + 1, Input.length()));
-                switch (Operator) {
+                num1 = Double.parseDouble(input.substring(0, indexOfOperator));
+                num2 = Double.parseDouble(input.substring(indexOfOperator + 1, input.length()));
+                switch (operator) {
                     case "+":
                         sum1 = num1 + num2;
                         break;
@@ -367,10 +367,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         } else {
 
-            if (Input.startsWith(Operator)) {
-                if ((Operator == "sin") || (Operator == "cos") || (Operator == "tan")) {
-                    num4 = Integer.parseInt(Input.substring(indexOfOperator + 3, Input.length()));
-                    switch (Operator) {
+            if (input.startsWith(operator)) {
+                if ((operator == "sin") || (operator == "cos") || (operator == "tan")) {
+                    num4 = Integer.parseInt(input.substring(indexOfOperator + 3, input.length()));
+                    switch (operator) {
                         case "sin":
                             sum2 = (int) Math.sin(pi / 180 * num4);
                             break;
@@ -384,9 +384,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             break;
                     }
                     return sum2;
-                } else if ((Operator == "lg") || (Operator == "√￣")) {
-                    num4 = Integer.parseInt(Input.substring(indexOfOperator + 2, Input.length()));
-                    switch (Operator) {
+                } else if ((operator == "lg") || (operator == "√￣")) {
+                    num4 = Integer.parseInt(input.substring(indexOfOperator + 2, input.length()));
+                    switch (operator) {
                         case "lg":
                             sum2 = (int) Math.log10(num4);
                             break;
@@ -398,9 +398,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     return sum2;
                 }
-            } else if (Input.endsWith(Operator)) {
-                num3 = Integer.parseInt(Input.substring(0, indexOfOperator));
-                switch (Operator) {
+            } else if (input.endsWith(operator)) {
+                num3 = Integer.parseInt(input.substring(0, indexOfOperator));
+                switch (operator) {
                     case "!":
                         sum2 = 1;
                         for (int i = 1; i <= num3; i++) {
@@ -411,36 +411,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 return sum2;
             } else {
-                if (Input.contains("mod")) {
-                    num3 = Integer.parseInt(Input.substring(0, indexOfOperator));  //从输入的Input字符串里得到第一个运算数
-                    num4 = Integer.parseInt(Input.substring(indexOfOperator + 3, Input.length()));
+                if (input.contains("mod")) {
+                    num3 = Integer.parseInt(input.substring(0, indexOfOperator));  //从输入的input字符串里得到第一个运算数
+                    num4 = Integer.parseInt(input.substring(indexOfOperator + 3, input.length()));
                     sum2 = num3 % num4;
                     return sum2;
                 } else {
-                    switch (Operator) {
+                    switch (operator) {
                         case "+":
-                            num3 = Integer.parseInt(Input.substring(0, indexOfOperator));  //从输入的Input字符串里得到第一个运算数
-                            num4 = Integer.parseInt(Input.substring(indexOfOperator + 1, Input.length()));
+                            num3 = Integer.parseInt(input.substring(0, indexOfOperator));  //从输入的input字符串里得到第一个运算数
+                            num4 = Integer.parseInt(input.substring(indexOfOperator + 1, input.length()));
                             sum2 = num3 + num4;
                             break;
                         case "-":
-                            num3 = Integer.parseInt(Input.substring(0, indexOfOperator));  //从输入的Input字符串里得到第一个运算数
-                            num4 = Integer.parseInt(Input.substring(indexOfOperator + 1, Input.length()));
+                            num3 = Integer.parseInt(input.substring(0, indexOfOperator));  //从输入的input字符串里得到第一个运算数
+                            num4 = Integer.parseInt(input.substring(indexOfOperator + 1, input.length()));
                             sum2 = num3 - num4;
                             break;
                         case "*":
-                            num3 = Integer.parseInt(Input.substring(0, indexOfOperator));  //从输入的Input字符串里得到第一个运算数
-                            num4 = Integer.parseInt(Input.substring(indexOfOperator + 1, Input.length()));
+                            num3 = Integer.parseInt(input.substring(0, indexOfOperator));  //从输入的input字符串里得到第一个运算数
+                            num4 = Integer.parseInt(input.substring(indexOfOperator + 1, input.length()));
                             sum2 = num3 * num4;
                             break;
                         case "/":
-                            num3 = Integer.parseInt(Input.substring(0, indexOfOperator));  //从输入的Input字符串里得到第一个运算数
-                            num4 = Integer.parseInt(Input.substring(indexOfOperator + 1, Input.length()));
+                            num3 = Integer.parseInt(input.substring(0, indexOfOperator));  //从输入的input字符串里得到第一个运算数
+                            num4 = Integer.parseInt(input.substring(indexOfOperator + 1, input.length()));
                             sum2 = num3 / num4;
                             break;
                         case "^":
-                            num3 = Integer.parseInt(Input.substring(0, indexOfOperator));  //从输入的Input字符串里得到第一个运算数
-                            num4 = Integer.parseInt(Input.substring(indexOfOperator + 1, Input.length()));
+                            num3 = Integer.parseInt(input.substring(0, indexOfOperator));  //从输入的input字符串里得到第一个运算数
+                            num4 = Integer.parseInt(input.substring(indexOfOperator + 1, input.length()));
                             sum2 = 1;
                             for (int i = 1; i <= num4; i++) {
                                 sum2 *= num3;
