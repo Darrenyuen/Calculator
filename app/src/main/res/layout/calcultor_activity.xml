@@ -12,7 +12,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:textAllCaps="false"
-        android:background="#3399CC"
+        android:background="#A63D46"
+        android:textColor="#FFFFFF"
         android:text="^" />
 
     <Button
@@ -21,7 +22,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/button_exp"
-        android:background="#3399CC"
+        android:background="#A63D46"
+        android:textColor="#FFFFFF"
         android:text="." />
 
     <Button
@@ -30,7 +32,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_alignTop="@+id/button_point"
         android:layout_toEndOf="@+id/button_point"
-        android:background="#33CCFF"
+        android:background="#A63D5E"
+        android:textColor="#FFFFFF"
         android:text="0" />
 
     <Button
@@ -38,9 +41,10 @@
         app:layout_widthPercent="20%"
         app:layout_heightPercent="12.5%"
         android:layout_alignParentBottom="true"
-        android:background="#3399CC"
+        android:background="#A63D46"
         android:layout_toEndOf="@+id/button_zero"
         android:textAllCaps="false"
+        android:textColor="#FFFFFF"
         android:text="mod" />
 
     <Button
@@ -49,8 +53,9 @@
         app:layout_heightPercent="12.5%"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/button_mod"
-        android:background="#3399CC"
+        android:background="#A63D46"
         android:textAllCaps="false"
+        android:textColor="#FFFFFF"
         android:text="+" />
 
     <Button
@@ -58,8 +63,9 @@
         app:layout_widthPercent="20%"
         app:layout_heightPercent="12.5%"
         android:layout_above="@+id/button_exp"
-        android:background="#3399CC"
+        android:background="#A63D46"
         android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"
         android:textAllCaps="false"
         android:text="lg" />
 
@@ -69,7 +75,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_alignTop="@+id/button_lg"
         android:layout_toEndOf="@+id/button_lg"
-        android:background="#33CCFF"
+        android:background="#A63D5E"
+        android:textColor="#FFFFFF"
         android:text="7" />
 
     <Button
@@ -78,7 +85,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_above="@+id/button_add"
         android:layout_toEndOf="@+id/button_seven"
-        android:background="#33CCFF"
+        android:background="#A63D5E"
+        android:textColor="#FFFFFF"
         android:text="8" />
 
     <Button
@@ -87,7 +95,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_above="@+id/button_mod"
         android:layout_toEndOf="@+id/button_eight"
-        android:background="#33CCFF"
+        android:background="#A63D5E"
+        android:textColor="#FFFFFF"
         android:text="9" />
 
     <Button
@@ -95,8 +104,9 @@
         app:layout_widthPercent="20%"
         app:layout_heightPercent="12.5%"
         android:layout_above="@+id/button_mod"
-        android:background="#3399CC"
+        android:background="#A63D46"
         android:layout_alignParentEnd="true"
+        android:textColor="#FFFFFF"
         android:text="-" />
 
     <Button
@@ -105,7 +115,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_above="@+id/button_lg"
         android:layout_alignParentStart="true"
-        android:background="#3399CC"
+        android:background="#A63D46"
+        android:textColor="#FFFFFF"
         android:textAllCaps="false"
         android:text="tan" />
 
@@ -115,7 +126,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_above="@+id/button_seven"
         android:layout_toEndOf="@+id/button_tan"
-        android:background="#33CCFF"
+        android:textColor="#FFFFFF"
+        android:background="#A63D5E"
         android:text="4" />
 
     <Button
@@ -124,7 +136,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_alignTop="@+id/button_four"
         android:layout_toEndOf="@+id/button_four"
-        android:background="#33CCFF"
+        android:textColor="#FFFFFF"
+        android:background="#A63D5E"
         android:text="5" />
 
     <Button
@@ -133,7 +146,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_above="@+id/button_sub"
         android:layout_toEndOf="@+id/button_five"
-        android:background="#33CCFF"
+        android:textColor="#FFFFFF"
+        android:background="#A63D5E"
         android:text="6" />
 
     <Button
@@ -141,8 +155,9 @@
         app:layout_widthPercent="20%"
         app:layout_heightPercent="12.5%"
         android:layout_alignTop="@+id/button_six"
-        android:background="#3399CC"
+        android:background="#A63D46"
         android:layout_toEndOf="@+id/button_six"
+        android:textColor="#FFFFFF"
         android:text="*" />
 
     <Button
@@ -151,8 +166,9 @@
         app:layout_heightPercent="12.5%"
         android:text="cos"
         android:layout_above="@+id/button_tan"
-        android:background="#3399CC"
+        android:background="#A63D46"
         android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"
         android:textAllCaps="false"/>
 
     <Button
@@ -161,7 +177,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_alignTop="@+id/button_cos"
         android:layout_toEndOf="@+id/button_tan"
-        android:background="#33CCFF"
+        android:textColor="#FFFFFF"
+        android:background="#A63D5E"
         android:text="1" />
 
     <Button
@@ -170,7 +187,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_alignBottom="@+id/button_one"
         android:layout_toEndOf="@+id/button_four"
-        android:background="#33CCFF"
+        android:background="#A63D5E"
+        android:textColor="#FFFFFF"
         android:text="2" />
 
     <Button
@@ -179,7 +197,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_alignTop="@+id/button_two"
         android:layout_toEndOf="@+id/button_five"
-        android:background="#33CCFF"
+        android:background="#A63D5E"
+        android:textColor="#FFFFFF"
         android:text="3" />
 
     <Button
@@ -188,7 +207,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_alignTop="@+id/button_three"
         android:layout_toEndOf="@+id/button_three"
-        android:background="#3399CC"
+        android:background="#A63D46"
+        android:textColor="#FFFFFF"
         android:text="/" />
 
     <Button
@@ -197,8 +217,9 @@
         app:layout_heightPercent="12.5%"
         android:layout_above="@+id/button_cos"
         android:layout_alignParentStart="true"
+        android:textColor="#FFFFFF"
         android:textAllCaps="false"
-        android:background="#3399CC"
+        android:background="#A63D46"
         android:text="sin" />
 
     <Button
@@ -207,7 +228,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_above="@+id/button_cos"
         android:layout_toEndOf="@+id/button_cos"
-        android:background="#3399CC"
+        android:textColor="#FFFFFF"
+        android:background="#A63D46"
         android:textAllCaps="false"
         android:text="√￣" />
 
@@ -215,9 +237,10 @@
         android:id="@+id/button_fac"
         app:layout_widthPercent="20%"
         app:layout_heightPercent="12.5%"
+        android:textColor="#FFFFFF"
         android:layout_above="@+id/button_two"
         android:layout_toEndOf="@+id/button_rad"
-        android:background="#3399CC"
+        android:background="#A63D46"
         android:textAllCaps="false"
         android:text="!" />
 
@@ -227,7 +250,8 @@
         app:layout_heightPercent="12.5%"
         android:layout_above="@+id/button_three"
         android:layout_toEndOf="@+id/button_two"
-        android:background="#3399CC"
+        android:background="#A63D46"
+        android:textColor="#FFFFFF"
         android:text="←" />
 
     <Button
@@ -236,25 +260,29 @@
         app:layout_heightPercent="12.5%"
         android:layout_above="@+id/button_three"
         android:layout_alignParentEnd="true"
-        android:background="#3399CC"
+        android:background="#A63D46"
+        android:textColor="#FFFFFF"
         android:text="=" />
 
     <Button
         android:id="@+id/button_clean"
         app:layout_widthPercent="100%"
-        app:layout_heightPercent="12.5%"
-        android:textSize="30dp"
+        app:layout_heightPercent="10%"
+        android:textSize="18dp"
         android:layout_above="@+id/button_sin"
         android:layout_alignParentStart="true"
         android:textAllCaps="false"
-        android:background="#3333FF"
-        android:text="Clean input" />
+        android:background="#373B4A"
+        android:textColor="#FFFFFF"
+        android:text="清空" />
 
-    <EditText
+    <TextView
         android:id="@+id/editText"
         app:layout_widthPercent="100%"
-        app:layout_heightPercent="25%"
+        app:layout_heightPercent="27.5%"
+        android:background="#181820"
         android:text=""
+        android:textColor="#FFFFFF"
         android:layout_above="@+id/button_clean"
         android:layout_alignParentStart="true" />
 

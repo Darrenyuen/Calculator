@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button equ;
     private Button point;
 
-    private EditText showText;             //用来显示输入的符号和数字
+    private TextView showText;             //用来显示输入的符号和数字
     private String input = "";           //字符串用来保存输入的数字和符号
     private String operator;            //用来记录运算符号
     double sum1, num1, num2;
@@ -88,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         clean = (Button) findViewById(R.id.button_clean);
         equ = (Button) findViewById(R.id.button_equ);
         point = (Button) findViewById(R.id.button_point);
-        showText = (EditText) findViewById(R.id.editText);
+        showText = (TextView) findViewById(R.id.editText);
 
         //初始化文本编辑框
         showText.setCursorVisible(false);
